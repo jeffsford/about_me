@@ -30,4 +30,22 @@ if (thirdQuestion.toUpperCase() === 'YES' || thirdQuestion.toUpperCase() === 'Y'
     console.log();('You didn\'t enter a valid response!');
 }
 
-var fourthQuestion = prompt()
+var fourthQuestion = prompt('Do I have any siblings?');
+
+if (fourthQuestion.toUpperCase() === 'YES' || fourthQuestion.toUpperCase() === 'Y') {
+    console.log('Yes. I have one brother and one sister.');
+  } else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
+    console.log('Incorrect. I have a brother and a sister.');
+  } else {
+    console.log();('You didn\'t enter a valid response!');
+  }
+
+  var fifthQuestion = prompt('Am I right-handed?');
+
+  if (fifthQuestion.toUpperCase() === 'YES' || fifthQuestion.toUpperCase() === 'Y') {
+    console.log('No! I am left-handed.');
+  } else if (fifthQuestion.toUpperCase() === 'NO' || fifthQuestion.toUpperCase() === 'N') {
+    console.log('That is correct!');
+  } else {
+    console.log();('You didn\'t enter a valid response!');
+  }
