@@ -1,0 +1,12 @@
+body {
+  font-family: Arial;
+  color: white;
+  background-color: #4066a5;
+  padding: 10px;
+}
+h1 {
+  font-family: Verdana;
+}
+.places {
+  font-weight: bold;
+}
