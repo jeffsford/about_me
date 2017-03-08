@@ -33,9 +33,9 @@ if (thirdQuestion.toUpperCase() === 'YES' || thirdQuestion.toUpperCase() === 'Y'
 var fourthQuestion = prompt('Do I have any siblings?');
 
 if (fourthQuestion.toUpperCase() === 'YES' || fourthQuestion.toUpperCase() === 'Y') {
-    console.log('Yes. I have one brother and one sister.');
+    console.log('Yes. I have two siblings.');
   } else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
-    console.log('Incorrect. I have a brother and a sister.');
+    console.log('Incorrect. I have two siblings.');
   } else {
     console.log();('You didn\'t enter a valid response!');
   }
