@@ -7,7 +7,7 @@ if (firstQuestion.toUpperCase() === 'YES' || firstQuestion.toUpperCase() === 'Y'
 } else if (firstQuestion.toUpperCase() === 'NO' || firstQuestion.toUpperCase() === 'N') {
     console.log('You are correct!  I just barely missed the 1970s, being born in April of 1980.');
 } else {
-    console.log();('You didn\'t enter a valid response!');
+    console.log('You didn\'t enter a valid response!');
 }
 
 var secondQuestion = prompt('Have I lived anywhere outside of Washington state in my life?');
@@ -17,35 +17,35 @@ if (secondQuestion.toUpperCase() === 'YES' || secondQuestion.toUpperCase() === '
 } else if (secondQuestion.toUpperCase() === 'NO' || secondQuestion.toUpperCase() === 'N') {
     console.log('Actually I have been fortunate to live several different places in my life.');
 } else {
-    console.log();('You didn\'t enter a valid response!');
+    console.log('You didn\'t enter a valid response!');
 }
 
 var thirdQuestion = prompt('Did I attend college after graduating from high school?');
 
 if (thirdQuestion.toUpperCase() === 'YES' || thirdQuestion.toUpperCase() === 'Y') {
     console.log('That\'s correct.  I attended the University of Washington, and studied Political Science.');
-  } else if (thirdQuestion.toUpperCase() === 'NO' || thirdQuestion.toUpperCase() === 'N') {
+} else if (thirdQuestion.toUpperCase() === 'NO' || thirdQuestion.toUpperCase() === 'N') {
     console.log('You are incorrect.  I did attend college after graduating from high school.')
-  } else {
-    console.log();('You didn\'t enter a valid response!');
+} else {
+    console.log('You didn\'t enter a valid response!');
 }
 
 var fourthQuestion = prompt('Do I have any siblings?');
 
 if (fourthQuestion.toUpperCase() === 'YES' || fourthQuestion.toUpperCase() === 'Y') {
     console.log('Yes. I have two siblings.');
-  } else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
+} else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
     console.log('Incorrect. I have two siblings.');
-  } else {
-    console.log();('You didn\'t enter a valid response!');
-  }
+} else {
+    console.log('You didn\'t enter a valid response!');
+}
 
-  var fifthQuestion = prompt('Am I right-handed?');
+var fifthQuestion = prompt('Am I right-handed?');
 
-  if (fifthQuestion.toUpperCase() === 'YES' || fifthQuestion.toUpperCase() === 'Y') {
+if (fifthQuestion.toUpperCase() === 'YES' || fifthQuestion.toUpperCase() === 'Y') {
     console.log('No! I am left-handed.');
-  } else if (fifthQuestion.toUpperCase() === 'NO' || fifthQuestion.toUpperCase() === 'N') {
+} else if (fifthQuestion.toUpperCase() === 'NO' || fifthQuestion.toUpperCase() === 'N') {
     console.log('That is correct!');
-  } else {
-    console.log();('You didn\'t enter a valid response!');
-  }
+} else {
+    console.log('You didn\'t enter a valid response!');
+}
