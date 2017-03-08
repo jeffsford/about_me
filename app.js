@@ -69,15 +69,15 @@ var fourthQuestion = prompt('Do I have any siblings?');
 
 if (fourthQuestion.toUpperCase() === 'YES' || fourthQuestion.toUpperCase() === 'Y') {
 
-    alert('Yes. I have two siblings.');
+    alert('Yes. I do have siblings.');
 
-    console.log('Yes. I have two siblings.');
+    console.log('Yes. I do have siblings.');
 
 } else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
 
-    alert('Incorrect. I have two siblings.');
+    alert('Incorrect. I do have siblings.');
 
-    console.log('Incorrect. I have two siblings.');
+    console.log('Incorrect. I do have siblings.');
 
 } else {
 
