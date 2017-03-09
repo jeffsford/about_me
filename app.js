@@ -1,17 +1,18 @@
 'use strict';
 
-var userName = prompt('What is your name?');
-  alert('It\'s nice to meet you ' + userName + '!');
+var userName = prompt('What is your name?');alert('It\'s nice to meet you ' + userName + '!');
 
 var firstQuestion = prompt('Was I born in the 1970s?');
 var answerI = 'You didn\'t enter a valid response!';
+var numCorrect = 0;
 
 if (firstQuestion.toUpperCase() === 'YES' || firstQuestion.toUpperCase() === 'Y') {
-var answerOneY = 'I was not born in the 1970s, but you were very close. I was born in April of 1980.';
+  var answerOneY = 'I was not born in the 1970s, but you were very close. I was born in April of 1980.';
   alert(answerOneY);
   console.log(answerOneY);
 } else if (firstQuestion.toUpperCase() === 'NO' || firstQuestion.toUpperCase() === 'N') {
-var answerOneN = 'You are correct!  I just barely missed the 1970s, being born in April of 1980.';
+  var answerOneN = 'You are correct!  I just barely missed the 1970s, being born in April of 1980.';
+  numCorrect++;
   alert(answerOneN);
   console.log(answerOneN);
 } else {
@@ -22,11 +23,12 @@ var answerOneN = 'You are correct!  I just barely missed the 1970s, being born i
 var secondQuestion = prompt('Have I lived anywhere outside of Washington state in my life?');
 
 if (secondQuestion.toUpperCase() === 'YES' || secondQuestion.toUpperCase() === 'Y') {
-var answerTwoY = 'That is correct! I have lived many places in my life. These places include Washington, DC, Texas, South Carolina, and Virginia.';
+  var answerTwoY = 'That is correct! I have lived many places in my life. These places include Washington, DC, Texas, South Carolina, and Virginia.';
+  numCorrect++;
   alert(answerTwoY);
   console.log(answerTwoY);
 } else if (secondQuestion.toUpperCase() === 'NO' || secondQuestion.toUpperCase() === 'N') {
-var answerTwoN = 'Actually I have been fortunate to live several different places in my life.';
+  var answerTwoN = 'Actually I have been fortunate to live several different places in my life.';
   alert(answerTwoN);
   console.log(answerTwoN);
 } else {
@@ -37,11 +39,12 @@ var answerTwoN = 'Actually I have been fortunate to live several different place
 var thirdQuestion = prompt('Did I attend college after graduating from high school?');
 
 if (thirdQuestion.toUpperCase() === 'YES' || thirdQuestion.toUpperCase() === 'Y') {
-var answerThreeY = 'That\'s correct.  I attended the University of Washington, and studied Political Science.';
-    alert(answerThreeY);
-    console.log(answerThreeY);
+  var answerThreeY = 'That\'s correct.  I attended the University of Washington, and studied Political Science.';
+  numCorrect++;
+  alert(answerThreeY);
+  console.log(answerThreeY);
 } else if (thirdQuestion.toUpperCase() === 'NO' || thirdQuestion.toUpperCase() === 'N') {
-var answerThreeN = 'You are incorrect.  I did attend college after graduating from high school.';
+  var answerThreeN = 'You are incorrect.  I did attend college after graduating from high school.';
   alert(answerThreeN);
   console.log(answerThreeN);
 } else {
@@ -52,13 +55,14 @@ var answerThreeN = 'You are incorrect.  I did attend college after graduating fr
 var fourthQuestion = prompt('Do I have any siblings?');
 
 if (fourthQuestion.toUpperCase() === 'YES' || fourthQuestion.toUpperCase() === 'Y') {
-var answerFourY = 'Yes. I do have siblings.';
+  var answerFourY = 'Yes. I do have siblings.';
+  numCorrect++;
   alert(answerFourY);
   console.log(answerFourY);
 } else if (fourthQuestion.toUpperCase() === 'NO' || fourthQuestion.toUpperCase() === 'N') {
-var answerFourN = 'Incorrect. I do have siblings.';
-    alert(answerFourN);
-    console.log(answerFourN);
+  var answerFourN = 'Incorrect. I do have siblings.';
+  alert(answerFourN);
+  console.log(answerFourN);
 } else {
   alert(answerI);
   console.log(answerI);
@@ -67,11 +71,12 @@ var answerFourN = 'Incorrect. I do have siblings.';
 var fifthQuestion = prompt('Am I right-handed?');
 
 if (fifthQuestion.toUpperCase() === 'YES' || fifthQuestion.toUpperCase() === 'Y') {
-var answerFiveY = 'No! I am left-handed.';
+  var answerFiveY = 'No! I am left-handed.';
   alert(answerFiveY);
   console.log(answerFiveY);
 } else if (fifthQuestion.toUpperCase() === 'NO' || fifthQuestion.toUpperCase() === 'N') {
-var answerFiveN = 'That is correct!';
+  var answerFiveN = 'That is correct!';
+  numCorrect++;
   alert(answerFiveN);
   console.log(answerFiveN);
 } else {
@@ -93,6 +98,7 @@ for (var i = 0; i < 4; i++) {
     console.log(answerSixHigh);
   } else if (sixthQuestion == 7) { // prompt returns a string, can't use functions
     var answerSixCorrect = 'You are correct! The number was 7.';
+    numCorrect++;
     alert(answerSixCorrect);
     console.log(answerSixCorrect);
     break;
@@ -104,11 +110,11 @@ for (var i = 0; i < 4; i++) {
 }
 for (var i = 0; i < 6; i++) {
 
-  var favoriteMovies = ['Kong: Skull Island', 'Logan', 'Get Out', 'The Shack', 'Beauty and the Beast', 'Ghost in the Shell', 'The Lego Batman Movie', 'Moonlight', 'Hidden Figures', 'La La Land']
+  var favoriteMovies = ['Kong: Skull Island', 'Logan', 'Get Out', 'The Shack', 'Beauty and the Beast', 'Ghost in the Shell', 'The Lego Batman Movie', 'Moonlight', 'Hidden Figures', 'La La Land'];
 
-  var seventhQuestion = prompt('Can you name one of my top 10 favorite movies?')
+  var seventhQuestion = prompt('Can you name one of my top 10 favorite movies?');
 
-  var answerSevenCorrect = false
+  var answerSevenCorrect = false;
   for (var j = 0; j < favoriteMovies.length; j++) {
 
     if (seventhQuestion.toUpperCase() == favoriteMovies[j].toUpperCase()) {
@@ -119,6 +125,7 @@ for (var i = 0; i < 6; i++) {
 
   if (answerSevenCorrect === true) {
     var answerSevenY = 'That\'s right! ' + seventhQuestion + ' is one of my favorite movies.';
+    numCorrect++;
     alert(answerSevenY);
     console.log(answerSevenY);
     break;
@@ -127,4 +134,7 @@ for (var i = 0; i < 6; i++) {
     alert(answerSevenN);
     console.log(answerSevenN);
   }
+  var totalCorrect = 'You correctly answered ' + numCorrect + ' out of 7 questions.';
+  prompt(totalCorrect);
+  console.log(totalCorrect);
 }
