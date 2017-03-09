@@ -20,4 +20,7 @@ h1 {
 
 .closing {
   border-style: outset;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
