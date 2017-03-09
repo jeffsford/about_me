@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  color: white;
+  background-color: #4066a5;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+  border-width: 2px;
+  border-style: double;
+
+}
+h1 {
+  font-family: Verdana;
+  text-align: center;
+  padding: inherit;
+
+}
+.places {
+  font-weight: bold;
+}
+
+.closing {
+  border-style: outset;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
