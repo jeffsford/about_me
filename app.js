@@ -134,7 +134,8 @@ for (var i = 0; i < 6; i++) {
     alert(answerSevenN);
     console.log(answerSevenN);
   }
-  var totalCorrect = 'You correctly answered ' + numCorrect + ' out of 7 questions.';
-  prompt(totalCorrect);
-  console.log(totalCorrect);
+
 }
+var totalCorrect = 'You correctly answered ' + numCorrect + ' out of 7 questions.';
+alert(totalCorrect);
+console.log(totalCorrect);
