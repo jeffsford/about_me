@@ -78,3 +78,28 @@ var answerFiveN = 'That is correct!';
   alert(answerI);
   console.log(answerI);
 }
+
+for (var i = 0; i < 6; i++) {
+
+  var sixthQuestion = prompt('Guess a number between 1 and 10.');
+    console.log(sixthQuestion);
+    console.log(typeof sixthQuestion);
+  if (sixthQuestion < 7) {
+    var answerSixLow = 'The number you guessed is too low.';
+    alert(answerSixLow);
+    console.log(answerSixLow);
+  } else if (sixthQuestion > 7) {
+    var answerSixHigh = 'The number you guessed is too high.';
+    alert(answerSixHigh);
+    console.log(answerSixHigh);
+  } else if (sixthQuestion == 7) { // prompt returns a string, can't use functions
+    var answerSixCorrect = 'You are correct! The number was 7.';
+    alert(answerSixCorrect);
+    console.log(answerSixCorrect);
+    break;
+  } else {
+    var answerSixNaN = 'The answer you entered is not a number.';
+    alert(answerSixNaN);
+    console.log(answerSixNaN);
+  }
+}
