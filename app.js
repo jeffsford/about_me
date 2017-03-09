@@ -79,11 +79,10 @@ var answerFiveN = 'That is correct!';
   console.log(answerI);
 }
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 4; i++) {
 
   var sixthQuestion = prompt('Guess a number between 1 and 10.');
-    console.log(sixthQuestion);
-    console.log(typeof sixthQuestion);
+
   if (sixthQuestion < 7) {
     var answerSixLow = 'The number you guessed is too low.';
     alert(answerSixLow);
@@ -101,5 +100,31 @@ for (var i = 0; i < 6; i++) {
     var answerSixNaN = 'The answer you entered is not a number.';
     alert(answerSixNaN);
     console.log(answerSixNaN);
+  }
+}
+for (var i = 0; i < 6; i++) {
+
+  var favoriteMovies = ['Kong: Skull Island', 'Logan', 'Get Out', 'The Shack', 'Beauty and the Beast', 'Ghost in the Shell', 'The Lego Batman Movie', 'Moonlight', 'Hidden Figures', 'La La Land']
+
+  var seventhQuestion = prompt('Can you name one of my top 10 favorite movies?')
+
+  var answerSevenCorrect = false
+  for (var j = 0; j < favoriteMovies.length; j++) {
+
+    if (seventhQuestion.toUpperCase() == favoriteMovies[j].toUpperCase()) {
+      answerSevenCorrect = true;
+    }
+
+  }
+
+  if (answerSevenCorrect === true) {
+    var answerSevenY = 'That\'s right! ' + seventhQuestion + ' is one of my favorite movies.';
+    alert(answerSevenY);
+    console.log(answerSevenY);
+    break;
+  } else {
+    var answerSevenN = 'That is not correct. Acceptable answers include Kong: Skull Island, Logan, Get Out, The Shack, Beauty and the Beast, Ghost in the Shell, The Lego Batman Movie, Moonlight, Hidden Figures, and La La Land.';
+    alert(answerSevenN);
+    console.log(answerSevenN);
   }
 }
